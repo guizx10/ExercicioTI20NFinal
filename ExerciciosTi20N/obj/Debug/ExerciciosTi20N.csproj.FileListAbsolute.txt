@@ -1,0 +1,8 @@
+C:\Users\fabio.bgracce\source\repos\ExerciciosTi20N\ExerciciosTi20N\bin\Debug\ExerciciosTi20N.exe.config
+C:\Users\fabio.bgracce\source\repos\ExerciciosTi20N\ExerciciosTi20N\bin\Debug\ExerciciosTi20N.exe
+C:\Users\fabio.bgracce\source\repos\ExerciciosTi20N\ExerciciosTi20N\bin\Debug\ExerciciosTi20N.pdb
+C:\Users\fabio.bgracce\source\repos\ExerciciosTi20N\ExerciciosTi20N\obj\Debug\ExerciciosTi20N.csproj.AssemblyReference.cache
+C:\Users\fabio.bgracce\source\repos\ExerciciosTi20N\ExerciciosTi20N\obj\Debug\ExerciciosTi20N.csproj.SuggestedBindingRedirects.cache
+C:\Users\fabio.bgracce\source\repos\ExerciciosTi20N\ExerciciosTi20N\obj\Debug\ExerciciosTi20N.csproj.CoreCompileInputs.cache
+C:\Users\fabio.bgracce\source\repos\ExerciciosTi20N\ExerciciosTi20N\obj\Debug\ExerciciosTi20N.exe
+C:\Users\fabio.bgracce\source\repos\ExerciciosTi20N\ExerciciosTi20N\obj\Debug\ExerciciosTi20N.pdb
