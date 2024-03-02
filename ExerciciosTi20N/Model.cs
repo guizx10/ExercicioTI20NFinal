@@ -100,7 +100,35 @@ namespace ExerciciosTi20N
 
 
 
-        //Exercicio 5: Faça um programa que peça ao usuario um numero e imprima se é par ou ímpar.
+        //Exercicio 6: Faça um programa que peça ao usuario um numero e imprima se é par ou ímpar.
+
+        public string ExercicioSeis(int num)
+        {
+
+            if (num > 0)
+            {
+
+                return "Positivo";
+
+            }
+
+            else if ( num< 0 )
+            {
+                return "Negativo";
+            }
+
+            else 
+            {
+                return "zero";
+            
+            
+            }
+
+        }//fim do exercicio Seis
+
+
+        //Exercicio 05: FaÇa um programa que peça ao usuario um número e imprimna se é positivo, negativo ou zero.
+
 
         public string ExercicioCinco(int num)
         {
@@ -117,7 +145,90 @@ namespace ExerciciosTi20N
                 return "Ímpar";
             }
 
-        }//fim do exercicio quatro
+        }//fim do exercicio Cinco
+
+
+        // Exercicio 7: Faça um programa que peça ao usuario um
+        // número e imprima a tabuada desse número.
+
+        public string ExercicioSete(int num)
+        {
+            string resultado = "";
+            resultado += " Tabuada de " + num;
+            for (int i = 0; i <= 10; i++)
+            {
+                resultado += "\n " + num + " * " + i + " = " + (num * i);
+
+            }// fim do for
+
+            return resultado;
+           
+
+        }//fim da tabuada
+
+        //Exercicio 8: Faça um programa que peça ao usuário um número e
+        //imprima os números de 1 até esse número.
+
+        public string ExercicioOito(int num)
+        {
+
+            string resultado = "";
+            for (int i = 0; i < num; i++)
+            {
+
+                resultado += "\n" + (i + 1);
+
+            }
+
+            return resultado;
+
+        }//fim do metodo
+
+
+        //Exercicio 9: Faça um programa que peça ao usuário um número e
+        //imprima a soma dos números de 1 até esse número
+
+
+        public int ExercicioNove(int num)
+        {
+
+            int resultado = 0;
+            for (int i = 1; i <= num; i++)
+            {
+
+                resultado += i;
+            }//fim do for
+
+            return resultado;
+
+            // exercicio 10: Faça um programa que imprime os números primos de 1 a 20.
+
+
+            public bool EhPrimo(int numero)
+            {
+                bool primo = false;
+                int divisores = 0;
+
+                for (int i = 1; i <= numero; i++)
+                {
+                    if (numero == 0)// só para não dar erro de divisão por 0.
+                        continue;
+                    if (numero % i == 0)
+                        divisores++;
+                }
+                if (divisores == 2)
+                    primo = true;
+                else
+                    primo = false;
+
+                return primo;
+            }
+
+
+
+
+
+        }//fim do metodo
 
 
 

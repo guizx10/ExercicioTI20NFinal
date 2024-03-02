@@ -27,8 +27,12 @@ namespace ExerciciosTi20N
                 "2. Exercicio 02\n" +
                 "3. Exercicio 03\n" +
                 "4. Exercicio 04\n" +
-                "5. Exercicio 05\n");
-        
+                "5. Exercicio 05\n" +
+                "6. Exercicio 06\n" +
+                "7. Exercicio 07\n" +
+                "8. Exercicio 08\n" +
+                "9. Exercicio 09\n" +
+                "10.Exercicio 10");
         
         }//fim do menu
 
@@ -65,6 +69,32 @@ namespace ExerciciosTi20N
                         int num = Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine(modelo.ExercicioCinco(num));
                         break;
+                    case 6:
+                        Console.WriteLine("Informe um número");
+                        num = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine(modelo.ExercicioSeis(num));
+                        break;
+                    case 7:
+                        Console.WriteLine("Informe um número");
+                        num = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine(modelo.ExercicioSete(num));
+                        break;
+                    case 8:
+                        Console.WriteLine("Informe um número");
+                        num = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine(modelo.ExercicioOito(num));
+                        break;
+                    case 9:
+                        Console.WriteLine("Informe um número");
+                        num = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine(modelo.ExercicioNove(num));
+                        break;
+                    case 10:
+                        Console.WriteLine("Informe um número");
+                        num = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine(modelo.ExercicioDez(num));
+                        break;
+
                     default: 
                         Console.WriteLine("Código digitado não é válido!");
                         break;
