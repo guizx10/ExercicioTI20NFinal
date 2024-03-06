@@ -200,40 +200,74 @@ namespace ExerciciosTi20N
             }//fim do for
 
             return resultado;
-
+        }
             // exercicio 10: Faça um programa que imprime os números primos de 1 a 20.
 
-
-            public bool EhPrimo(int numero)
+            public string ExercicioDez()
             {
-                bool primo = false;
-                int divisores = 0;
 
-                for (int i = 1; i <= numero; i++)
-                {
-                    if (numero == 0)// só para não dar erro de divisão por 0.
-                        continue;
-                    if (numero % i == 0)
-                        divisores++;
-                }
-                if (divisores == 2)
-                    primo = true;
-                else
-                    primo = false;
+                string primos = "";
+                for (int i = 0; i <= 20; i++)
+                { 
+                
+                    if( i % 2 !=0 && i % 3 !=0 && i % 5 !=0)
 
-                return primo;
+                    { 
+                        primos += " " + i; 
+                    }
+
+                }//fim do for              
+
+                return primos;          
+                        
+            }// fim do metodo
+
+
+        // Faça um programa que peça ao usuario um número e verifique se é primo.
+
+
+        public string ExercicioOnze(int num)
+        {
+
+            if (num % 2 != 0 && num % 3 != 0 && num % 5 != 0)
+            {
+                return "Primos!!";
+
             }
+            else if (num == 2 || num == 3 || num == 5)
+            {
+                return "Primo!!";
+
+            }
+            else
+            {
+                return " Não Primo!!";
+            
+            }   
+
+                         
+                            
+
+        }// fim do metodo
 
 
 
+        // Faça um programa que calcule o fatorial de um número.
 
+        public int ExercicioDoze(int num)
+        {
 
-        }//fim do metodo
+            int resultado = 1;
+            while(num != 0) 
+            { 
+                resultado = (resultado * num);
+                num = num -1;
+            
+            }// fim do while
+            return resultado;
+           
 
-
-
-
-
+        }// fim do metodo
 
     }//fim da classe
 }//fim do projeto
