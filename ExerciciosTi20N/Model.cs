@@ -269,5 +269,117 @@ namespace ExerciciosTi20N
 
         }// fim do metodo
 
+
+
+
+        // exercicio 13: Faça um programa que imprima a sequencia de fibonate ate o 10 termo.
+
+        public string Exerciciotreze()
+
+        {
+            string resultado = "0 1";
+            int fib1 = 0;
+            int fib2 = 1; 
+            int fib3 = 0;
+            for (int i = 1; i <=8; i++) 
+            {
+               
+                fib3 = fib1 + fib2;
+                resultado += " " + fib3;
+                fib1 = fib2; 
+                fib2 = fib3;                    
+            
+            
+            }//fim do for
+
+            return resultado;      
+                      
+        
+        }// fim do metodo
+
+        // exercicio 14: Faça um programa que peça ao usuario um  numero e imprima se e um numero de fibonate  
+
+        public string ExercicioQuatorze(int num)
+        {
+
+
+            {
+                string resultado = "0 1";
+                int fib1 = 0;
+                int fib2 = 1;
+                int fib3 = 0;
+                for (int i = 1; i <= num - 2; i++)
+                {
+
+                    fib3 = fib1 + fib2;
+                    resultado += " " + fib3;
+                    fib1 = fib2;
+                    fib2 = fib3;
+
+
+                }//fim do for
+
+                return resultado;
+
+
+            }// fim do metodo
+        }//fim do metodo   
+
+        // Exercicio 15: faça um programa que peça ao usuario um 
+        //numero e calcule a soma dos seus digitos.
+        public int ExercicioQuinze(int num)
+        {
+
+            int soma = 0;
+
+            
+            while (num != 0)
+            {
+                
+                soma += num % 10;
+                
+                num /= 10;
+            }
+
+            return soma;
+        }
+       
+        // faça um programa que peça ao usuario um numero
+        // e imprima os numeros pares e impares de 1 ate esse numero
+
+        public string ExercicioDezesseis(int num) 
+        {
+
+            
+            string par = "";
+            string impar = "";
+
+            for (int i = 1; i <= num; i++)
+
+            {
+                
+
+                if (i % 2 == 0)
+                {
+                    par += " " + i;
+                }
+                else
+                {
+                    impar += " " + i;
+                }
+
+
+
+            }//fim do for
+
+            return "Pares: " + par + "\nimpar: " + impar;
+
+        }
+
+
+
+
+
+    }//fim do metodo
     }//fim da classe
-}//fim do projeto
+
