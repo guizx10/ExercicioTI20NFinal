@@ -1,7 +1,10 @@
-﻿using System;
+﻿using Microsoft.Win32.SafeHandles;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Runtime.InteropServices;
+using System.Runtime.Remoting.Messaging;
 using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
@@ -344,7 +347,7 @@ namespace ExerciciosTi20N
             return soma;
         }
        
-        // faça um programa que peça ao usuario um numero
+        // exercicio 16:faça um programa que peça ao usuario um numero
         // e imprima os numeros pares e impares de 1 ate esse numero
 
         public string ExercicioDezesseis(int num) 
@@ -377,6 +380,176 @@ namespace ExerciciosTi20N
         }
 
 
+        // Exercicio 17: Faça um programa que peça ao usuario um numero e imprima o dobro deste numero.
+
+
+        public int ExercicioDezessete(int num)
+        {
+
+            int resultado = 0;
+
+            resultado = num * 2;
+
+            return resultado;
+               
+        
+        
+        }
+
+
+        // Exercicio 18: Faça um programa que peça ao usuario dois numeros
+        //e imprima a média dele.
+
+        public double ExercicioDezoito(double num1,double num2)
+        { 
+        
+        
+        double media = 0;
+            
+            
+            media = (num1 + num2) / 2;
+
+            return media;
+
+            
+        
+        
+        }
+
+        // Exercicio 19: Faça um programa que converta a temperaturav de celsus 
+        // para fahrenheit.A formula é f = c * 9/5 +32.
+
+
+        public double ExercicioDezenove(double celsu)
+
+        {
+
+            double farenait = 0;
+
+            farenait = celsu * 9 / 5 + 32;
+
+            return farenait;      
+                        
+               
+        }
+
+
+
+        // Exercicio 20: Faça um programa que peça o raio de um circulo e imprima a area
+        // a formula é A = pi * raio ^2.
+
+        public double ExercicioVinte(double raio)
+        {
+            double area = 0;
+
+            area = Math.PI * (raio * raio);
+
+            return area;
+        }
+
+        // Exercicio 21: Faça um programa que peça  um número e imprima o seu quadrado
+        public int ExercicioVinteUm(int num)
+
+        {
+            int resultado = 0;
+            resultado = num * num;
+
+            return resultado ;      
+                
+        }
+        //Exercicio 22: Faça um programa que peça dois números e imprima o maiorm deles.
+
+        public int ExercicioVinteDois(int num3, int num4)
+        {
+
+            
+
+            if (num3 > num4)
+            {
+
+                return num3; 
+
+
+            }
+
+            else 
+            {
+                return num4;
+            
+            }
+        
+                    
+        }
+        //Exercicio 23:Faça um programa que peça dois números e imprima "São iguais" se os números forem iguais
+        //ou imprima "são diferentes"  se forem diferentes.
+
+        public string ExercicioVinteTres(int num3, int num4)
+        {
+
+            if (num3 == num4)
+            {
+
+                return "São iguais";
+
+            }
+            else
+
+            {
+
+                return " São Diferentes";
+            }           
+        
+        
+        }
+
+        //Exercicio 24:Faça um programa que peça a idade do usuario e
+        //imprima se ele e maior ou menor
+
+        public string ExercicioVinteQuatro(int num3)
+
+        { 
+        
+            if ( num3 < 18) 
+            
+            {
+
+                return " É menor";
+            }
+            else 
+            {
+
+                return " É maior";
+            }
+            
+        
+        
+        
+        }
+
+        // Exercicio 25:Faça um programa que peça dois numeros e impria o menor deles.
+
+        public string ExercicioVinteCinco(int num3, int num4)
+
+        {
+
+            if (num3 < num4)
+            {
+                return "Este é o menor" + num3;
+
+
+            }
+
+            else
+            {
+
+                return "Este é o menor" + num4;
+            
+            }
+        
+        
+        
+        
+        }
 
 
 
