@@ -47,7 +47,13 @@ namespace ExerciciosTi20N
                 "22.Exercicio 22\n" +
                 "23.Exercicio 23\n" +
                 "24.Exercicio 24\n" +
-                "25.Exercicio 25\n");
+                "25.Exercicio 25\n" +
+                "26.Exercicio 26\n" +
+                "27.Exercicio 27\n" +
+                "28.Exercicio 28\n" +
+                "29.Exercicio 29\n" +
+                "30.Exercicio 30\n" +
+                "31.Exercicio 31\n");
         
         }//fim do menu
 
@@ -191,7 +197,39 @@ namespace ExerciciosTi20N
                         num4 = Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine(modelo.ExercicioVinteCinco(num3, num4));
                         break;
+                     case 26:
+                        Console.WriteLine("Informe a altura");
+                        double altura = Convert.ToDouble(Console.ReadLine());
+                        Console.WriteLine("Informe o Peso");
+                        double peso = Convert.ToDouble(Console.ReadLine());
+                        Console.WriteLine(modelo.ExercicioVinteSeis(altura, peso));
+                        break;
+                    case 27:
+                        Console.WriteLine("Informe sua idade");
+                        double ano = Convert.ToDouble(Console.ReadLine());
+                        Console.WriteLine("Informe o seu mes");
+                        double mes = Convert.ToDouble(Console.ReadLine());
+                        Console.WriteLine("Informe o seu dia");
+                        double dia = Convert.ToDouble(Console.ReadLine());
+                        Console.WriteLine(modelo.ExercicioVinteSete(ano, mes,  dia));                                                                      
+                        break;
+                     case 28:
+                        Console.WriteLine("Informe o Salario Fixo");
+                        double SalarioFixo = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Informe a venda");
+                        double Vendas = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine(modelo.ExercicioVinteOito(SalarioFixo, Vendas));
+                        break;
 
+                     case 29:                       
+                        Console.WriteLine(modelo.ExercicioVinteNove());
+                        break;
+                     case 30:
+                        Console.WriteLine(modelo.ExercicioTrinta());
+                        break;
+                     case 31:
+                        Console.WriteLine(modelo.ExercicioTrintaUm());
+                        break;
                     default: 
                         Console.WriteLine("Código digitado não é válido!");
                         break;

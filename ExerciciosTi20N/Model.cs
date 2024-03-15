@@ -551,8 +551,138 @@ namespace ExerciciosTi20N
         
         }
 
+        // //Exercício 26: Faça um programa que peça a altura e o peso de uma pessoa e
+        //calcule o IMC (Índice de Massa Corporal). A fórmula é IMC = peso / altura^2.
 
+        public double ExercicioVinteSeis(double altura, double peso)
+        {
+
+            double imc = 0;
+            
+            imc = peso / (altura * altura);
+
+            return imc;
+        }
+
+        //Exercício 27: Faça um algoritmo que leia a idade de uma pessoa expressa em anos,
+        //meses e dias e escreva a idade dessa pessoa expressa apenas em dias.
+        //Considerar ano com 365 dias e mês com 30 dias.
+
+        public double ExercicioVinteSete(double ano, double mes, double dia)
+        {
+
+            return (ano * 365) + (mes * 30) + dia;    
+               
+        
+        }// fim do exercicio 27
+
+        //Exercício 28:  Ler o salário fixo e o valor das vendas efetuadas pelo
+        //vendedor de uma empresa.Sabendo-se que ele recebe uma
+        //comissão de 3% sobre o total das vendas até R$ 1.500,00
+        //mais 5% sobre o que ultrapassar este valor, calcular e
+        //escrever o seu salário total
+
+
+        public double ExercicioVinteOito(double salarioFixo, double vendas)
+        {
+
+            double vendasComissao = 0;
+
+            if (vendas <= 1500)
+            {
+                vendasComissao = (vendas * 0.03) + salarioFixo;
+            }
+            else if (vendas > 1500)
+            {
+                vendasComissao = ((vendas-1500) * 0.05) + (1500 * 0.03) + salarioFixo;
+            }
+
+            return vendasComissao;           
+        }// fim exercicio
+
+        //Exercício 29: Ler 10 valores e escrever quantos desses valores lidos são NEGATIVOS.
+
+        public int ExercicioVinteNove()
+        {
+
+
+            int num = 0;
+            int cont = 0;   
+
+            for (int i = 0; i <= 10; i++)
+
+            {
+
+                Console.WriteLine("Informe um número");
+                num = Convert.ToInt32(Console.ReadLine());
+
+                if (num < 0)
+                {
+                    cont++;
+                
+                }
+
+
+            }
+            return cont;
+            
+        }// fim exercicio
+
+        //Exercício 30: Escreva um algoritmo para ler 10 números. Todos os
+        //números lidos com valor inferior a 40 devem ser somados.
+        //Escreva o valor final da soma efetuada
+
+        public int ExercicioTrinta()
+        {
+
+
+            int num = 0;
+            int soma = 0;
+
+            for (int i = 0; i < 10; i++)
+
+            {
+
+                Console.WriteLine("Informe um número");
+                num = Convert.ToInt32(Console.ReadLine());
+
+                if (num < 40)
+                {
+                    soma += num;
+
+                }
+
+
+            }
+            return soma;
+
+        }// fim exercicio
+
+
+        //Exercício 31: Escreva um algoritmo que permita a leitura das notas de
+        //uma turma de 20 alunos.Calcular a média da turma.Escrever a média da turma.
+
+
+        public string ExercicioTrintaUm()
+        {
+
+            int soma = 0;
+            int media = 0;
+            int nota = 0;
+            int num = 0;
+
+
+            for (int i = 0; i <= 20; i++)
+            {
+
+                Console.WriteLine("Informe um número");
+                num = Convert.ToInt32(Console.ReadLine());
+                soma += num;
+            }
+            media = soma / 20;
+            return "A média é: " + media  ;
+        }
 
     }//fim do metodo
-    }//fim da classe
+}//fim da classe
 
